@@ -1,0 +1,7 @@
+kzg.params
+network.onnx
+proof.pf
+proof.vk
+aggr_proof.pf
+aggr_proof.vk
+input.json
