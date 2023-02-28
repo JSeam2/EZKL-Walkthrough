@@ -1,5 +1,5 @@
 # EZKL Walkthrough
-Step by Step EZKL walkthrough
+Step by Step EZKL walkthrough. EZKL is a Zero Knowledge Machine Learning library that helps you turn ZK proofs into
 
 ## Generate Neural Nets
 You will need to generate a sample neural network prior to running the proofs
@@ -28,8 +28,15 @@ In this tutorial, we're focused on providing proofs that can be run on the EVM.
 6. Run the generate the KZG polynomial commitment `./gen_kzg.sh`. This will create a Structured Reference String (SRS) `kzg.params` in the folder.
 You can alternatively find pre-generated SRS in [https://github.com/han0110/halo2-kzg-srs](https://github.com/han0110/halo2-kzg-srs).
 
-7. Generate the initial proofs `./gen_evm_proof.sh`. This will create a `proof.pf` and `proof.vk` in the folder.
+**Not Using Aggregation**
+7. Generate the proofs `./gen_evm_proof.sh`. This will create a `proof.pf` and `proof.vk` in the folder.
 
-8. Generate the aggregated proofs `./gen_evm_aggr.sh`. This will create a `aggr_proof.pf` and `aggr_proof.vk` in the folder.
+8. Generate the EVM verifier
 
-8. Generate the EVM verifier `./gen_evm_verifier.sh`
+
+**Using Aggregation**
+7. Generate the initial proofs `./aggregation/gen_evm_proof.sh`. This will create a `proof.pf` and `proof.vk` in the folder.
+
+8. Generate the aggregated proofs `./aggregation/gen_evm_aggr.sh`. This will create a `aggr_proof.pf` and `aggr_proof.vk` in the folder.
+
+8. Generate the EVM verifier `./aggregation/gen_evm_verifier.sh`

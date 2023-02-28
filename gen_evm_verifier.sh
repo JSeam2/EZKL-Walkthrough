@@ -1,9 +1,8 @@
-ezkl \
--K=19 \
---bits=16 \
-create-evm-verifier-aggr \
+ezkl -K=17 --bits=16 --public-inputs --public-outputs create-evm-verifier \
+-D ./input.json \
+-M ./network.onnx \
 --pfsys=kzg \
---deployment-code-path aggr_proof.code \
+--deployment-code-path proof.code \
 --params-path=kzg.params \
---vk-path aggr_proof.vk \
+--vk-path proof.vk \
 --sol-code-path verify.sol

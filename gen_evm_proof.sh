@@ -1,12 +1,7 @@
-ezkl \
--K=19 \
---bits=16 \
-prove \
---pfsys=kzg \
---transcript=poseidon \
---strategy=accum \
+ezkl --bits=16 -K=17 --public-inputs --public-outputs prove \
 -D ./input.json \
 -M ./network.onnx \
 --proof-path proof.pf \
+--vk-path proof.vk \
 --params-path=kzg.params \
---vk-path=proof.vk
+--transcript=evm
