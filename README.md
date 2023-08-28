@@ -1,5 +1,5 @@
 # EZKL Walkthrough
-This is now outdated please visit [https://docs.ezkl.xyz/](https://docs.ezkl.xyz)
+**This is now outdated please visit [https://docs.ezkl.xyz/](https://docs.ezkl.xyz)**
 
 Step by Step EZKL walkthrough. EZKL is a Zero Knowledge Machine Learning library that helps you turn ZK proofs into
 
